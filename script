@@ -1,0 +1,1006 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DroomerHub = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SideBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local CloudFrame = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local MoonWalk = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AntiAFK = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GameName = Instance.new("TextLabel")
+local GameIcon = Instance.new("ImageLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local EditorFrame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
+local Execute = Instance.new("ImageButton")
+local Clear = Instance.new("ImageButton")
+local Close = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local Close_2 = Instance.new("TextButton")
+local Mini = Instance.new("TextButton")
+local SetFrame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Settings = Instance.new("ImageButton")
+local Editor = Instance.new("ImageButton")
+local Cloud = Instance.new("ImageButton")
+local Open = Instance.new("ImageButton")
+
+--Properties:
+
+DroomerHub.Name = "DroomerHub"
+DroomerHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DroomerHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = DroomerHub
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.304757446, 0, 0.278416872, 0)
+Frame.Size = UDim2.new(0, 768, 0, 420)
+
+UICorner.Parent = Frame
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Frame
+SideBar.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SideBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(0.0124999685, 0, 0.120140873, 0)
+SideBar.Size = UDim2.new(0, 100, 0, 349)
+
+UICorner_2.Parent = SideBar
+
+CloudFrame.Name = "CloudFrame"
+CloudFrame.Parent = Frame
+CloudFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+CloudFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudFrame.BorderSizePixel = 0
+CloudFrame.Position = UDim2.new(0.170572922, 0, 0.118512616, 0)
+CloudFrame.Size = UDim2.new(0, 625, 0, 349)
+CloudFrame.Visible = false
+
+Fly.Name = "Fly"
+Fly.Parent = CloudFrame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.664798617, 0, 0.43851468, 0)
+Fly.Size = UDim2.new(0, 200, 0, 50)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly: OFF"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner_3.Parent = Fly
+
+MoonWalk.Name = "Moon-Walk"
+MoonWalk.Parent = CloudFrame
+MoonWalk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoonWalk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MoonWalk.BorderSizePixel = 0
+MoonWalk.Position = UDim2.new(0.664798617, 0, 0.602328837, 0)
+MoonWalk.Size = UDim2.new(0, 200, 0, 50)
+MoonWalk.Font = Enum.Font.SourceSans
+MoonWalk.Text = "Moon-Walk: OFF"
+MoonWalk.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoonWalk.TextScaled = true
+MoonWalk.TextSize = 14.000
+MoonWalk.TextWrapped = true
+
+UICorner_4.Parent = MoonWalk
+
+Noclip.Name = "Noclip"
+Noclip.Parent = CloudFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.664798617, 0, 0.267365456, 0)
+Noclip.Size = UDim2.new(0, 200, 0, 50)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip: OFF"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+UICorner_5.Parent = Noclip
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = CloudFrame
+AntiAFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFK.BorderSizePixel = 0
+AntiAFK.Position = UDim2.new(0.664798617, 0, 0.0962164178, 0)
+AntiAFK.Size = UDim2.new(0, 200, 0, 50)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "Anti-AFK: OFF"
+AntiAFK.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFK.TextScaled = true
+AntiAFK.TextSize = 14.000
+AntiAFK.TextWrapped = true
+
+UICorner_6.Parent = AntiAFK
+
+GameName.Name = "GameName"
+GameName.Parent = CloudFrame
+GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName.BackgroundTransparency = 1.000
+GameName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GameName.BorderSizePixel = 0
+GameName.Position = UDim2.new(-0.00444999989, 0, 0.250586212, 0)
+GameName.Size = UDim2.new(0, 136, 0, 45)
+GameName.Font = Enum.Font.SourceSans
+GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameName.TextScaled = true
+GameName.TextSize = 14.000
+GameName.TextWrapped = true
+
+GameIcon.Name = "GameIcon"
+GameIcon.Parent = CloudFrame
+GameIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GameIcon.BorderSizePixel = 0
+GameIcon.Position = UDim2.new(0.0403500013, 0, 0.0331479497, 0)
+GameIcon.Size = UDim2.new(0, 79, 0, 77)
+GameIcon.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_7.CornerRadius = UDim.new(0, 8999999)
+UICorner_7.Parent = GameIcon
+
+UICorner_8.Parent = CloudFrame
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = Frame
+EditorFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Position = UDim2.new(0.171875, 0, 0.11851269, 0)
+EditorFrame.Size = UDim2.new(0, 625, 0, 349)
+
+TextBox.Parent = EditorFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0272000004, 0, 0.0630372465, 0)
+TextBox.Size = UDim2.new(0, 595, 0, 256)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.Text = "print(\"Droomer\")"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 25.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_9.Parent = TextBox
+
+Execute.Name = "Execute"
+Execute.Parent = EditorFrame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0272000004, 0, 0.822855353, 0)
+Execute.Size = UDim2.new(0, 58, 0, 50)
+Execute.Image = "rbxassetid://113945484031121"
+
+Clear.Name = "Clear"
+Clear.Parent = EditorFrame
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clear.BackgroundTransparency = 1.000
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.140799999, 0, 0.822855353, 0)
+Clear.Size = UDim2.new(0, 58, 0, 50)
+Clear.Image = "rbxassetid://114651041023327"
+
+Close.Name = "Close"
+Close.Parent = EditorFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.263999999, 0, 0.822855353, 0)
+Close.Size = UDim2.new(0, 58, 0, 50)
+Close.Image = "rbxassetid://80426187468432"
+
+UICorner_10.Parent = EditorFrame
+
+Close_2.Name = "Close"
+Close_2.Parent = Frame
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BackgroundTransparency = 1.000
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.94072789, 0, 0.0142857144, 0)
+Close_2.Size = UDim2.new(0, 34, 0, 37)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+Mini.Name = "Mini"
+Mini.Parent = Frame
+Mini.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mini.BackgroundTransparency = 1.000
+Mini.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mini.BorderSizePixel = 0
+Mini.Position = UDim2.new(0.896457016, 0, 0.0142857144, 0)
+Mini.Size = UDim2.new(0, 34, 0, 37)
+Mini.Font = Enum.Font.SourceSans
+Mini.Text = "-"
+Mini.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mini.TextScaled = true
+Mini.TextSize = 14.000
+Mini.TextWrapped = true
+
+SetFrame.Name = "SetFrame"
+SetFrame.Parent = Frame
+SetFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SetFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetFrame.BorderSizePixel = 0
+SetFrame.Position = UDim2.new(0.171875, 0, 0.11851269, 0)
+SetFrame.Size = UDim2.new(0, 625, 0, 349)
+SetFrame.Visible = false
+
+UICorner_11.Parent = SetFrame
+
+Settings.Name = "Settings"
+Settings.Parent = Frame
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.0354687385, 0, 0.770803094, 0)
+Settings.Size = UDim2.new(0, 63, 0, 63)
+Settings.Image = "rbxassetid://135480976923147"
+
+Editor.Name = "Editor"
+Editor.Parent = Frame
+Editor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Editor.BackgroundTransparency = 1.000
+Editor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Editor.BorderSizePixel = 0
+Editor.Position = UDim2.new(0.0354687385, 0, 0.162943959, 0)
+Editor.Size = UDim2.new(0, 63, 0, 63)
+Editor.Image = "rbxassetid://90036703493674"
+
+Cloud.Name = "Cloud"
+Cloud.Parent = Frame
+Cloud.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cloud.BackgroundTransparency = 1.000
+Cloud.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cloud.BorderSizePixel = 0
+Cloud.Position = UDim2.new(0.0354687385, 0, 0.400766283, 0)
+Cloud.Size = UDim2.new(0, 63, 0, 63)
+Cloud.Image = "rbxassetid://106063839227032"
+
+Open.Name = "Open"
+Open.Parent = DroomerHub
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.473958343, 0, 0.0861909166, 0)
+Open.Size = UDim2.new(0, 70, 0, 68)
+Open.Visible = false
+Open.Image = "rbxassetid://107506806042095"
+
+-- Scripts:
+
+local function BINUTCV_fake_script() -- Frame.DraggableGUI 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(BINUTCV_fake_script)()
+local function ONIZCZR_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local userInputService = game:GetService("UserInputService")
+	local runService = game:GetService("RunService")
+	
+	local flying = false
+	local speed = 50 -- Adjust flying speed
+	local character, humanoidRootPart, humanoid
+	local bodyVelocity, bodyGyro
+	local animationTracks = {}
+	
+	-- Function to get character
+	local function getCharacter()
+		return player.Character or player.CharacterAdded:Wait()
+	end
+	
+	-- Function to disable animations
+	local function disableAnimations()
+		if humanoid then
+			for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+				track:Stop()
+				table.insert(animationTracks, track) -- Store animations to restore later
+			end
+		end
+	end
+	
+	-- Function to enable animations
+	local function enableAnimations()
+		for _, track in pairs(animationTracks) do
+			track:Play()
+		end
+		animationTracks = {} -- Clear stored animations
+	end
+	
+	-- Function to start flying
+	local function startFlying()
+		character = getCharacter()
+		humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		if not humanoidRootPart or not humanoid then return end
+	
+		-- Disable animations and reset movement state
+		disableAnimations()
+		humanoid:ChangeState(Enum.HumanoidStateType.Physics) -- Prevent movement issues
+	
+		-- Disable gravity effects
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+		bodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+		bodyVelocity.Parent = humanoidRootPart
+	
+		-- Keep character upright
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.CFrame = humanoidRootPart.CFrame
+		bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		bodyGyro.P = 9e4
+		bodyGyro.Parent = humanoidRootPart
+	
+		-- Movement loop
+		runService.RenderStepped:Connect(function()
+			if not flying then return end
+	
+			local moveDirection = Vector3.new()
+	
+			if userInputService:IsKeyDown(Enum.KeyCode.W) then
+				moveDirection = moveDirection + (workspace.CurrentCamera.CFrame.LookVector * speed)
+			end
+			if userInputService:IsKeyDown(Enum.KeyCode.S) then
+				moveDirection = moveDirection - (workspace.CurrentCamera.CFrame.LookVector * speed)
+			end
+			if userInputService:IsKeyDown(Enum.KeyCode.A) then
+				moveDirection = moveDirection - (workspace.CurrentCamera.CFrame.RightVector * speed)
+			end
+			if userInputService:IsKeyDown(Enum.KeyCode.D) then
+				moveDirection = moveDirection + (workspace.CurrentCamera.CFrame.RightVector * speed)
+			end
+			if userInputService:IsKeyDown(Enum.KeyCode.Space) then
+				moveDirection = moveDirection + Vector3.new(0, speed, 0)
+			end
+			if userInputService:IsKeyDown(Enum.KeyCode.LeftControl) then
+				moveDirection = moveDirection - Vector3.new(0, speed, 0)
+			end
+	
+			bodyVelocity.Velocity = moveDirection
+			bodyGyro.CFrame = workspace.CurrentCamera.CFrame
+		end)
+	end
+	
+	-- Function to stop flying
+	local function stopFlying()
+		if bodyVelocity then bodyVelocity:Destroy() end
+		if bodyGyro then bodyGyro:Destroy() end
+	
+		-- Restore humanoid state
+		if humanoid then
+			humanoid:ChangeState(Enum.HumanoidStateType.GettingUp) -- Reset to normal walking
+		end
+	
+		-- Re-enable animations
+		enableAnimations()
+	end
+	
+	-- Toggle fly mode when button is clicked
+	button.MouseButton1Click:Connect(function()
+		flying = not flying -- Toggle state
+	
+		if flying then
+			button.Text = "Fly: ON"
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green when ON
+			startFlying()
+		else
+			button.Text = "Fly: OFF"
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+			stopFlying()
+		end
+	end)
+	
+	-- Set default text and color
+	button.Text = "Fly: OFF"
+	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+	
+end
+coroutine.wrap(ONIZCZR_fake_script)()
+local function GRRDQ_fake_script() -- MoonWalk.LocalScript 
+	local script = Instance.new('LocalScript', MoonWalk)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	
+	local isMoving = false -- Toggle state
+	
+	local function moveLoop()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+	
+		if not humanoidRootPart or not humanoid then return end
+	
+		-- Load and play animation
+		local animation = Instance.new("Animation")
+		animation.AnimationId = "rbxassetid://82833284723708"
+		local animator = humanoid:FindFirstChildOfClass("Animator") or humanoid:WaitForChild("Animator")
+		local animationTrack = animator:LoadAnimation(animation)
+	
+		animationTrack:Play()
+	
+		while isMoving do
+			-- Move 2 studs forward (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, 0.5)
+			camera.CFrame = camera.CFrame * CFrame.new(0, 0, 0.5) 
+			wait(0.0000000000000001)
+		end
+	
+		-- Stop animation when movement stops
+		animationTrack:Stop()
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isMoving = not isMoving -- Toggle movement state
+	
+		if isMoving then
+			button.Text = "Moon-Walk: ON"
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green when ON
+			moveLoop()
+		else
+			button.Text = "Moon-Walk: OFF"
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+		end
+	end)
+	
+	-- Set default text and color
+	button.Text = "Moon-Walk: OFF"
+	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+	
+end
+coroutine.wrap(GRRDQ_fake_script)()
+local function DJLC_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local isNoclip = false -- Toggle state
+	
+	local function noclipLoop()
+		local character = player.Character or player.CharacterAdded:Wait()
+	
+		while isNoclip do
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and part.CanCollide then
+					part.CanCollide = false -- Disable collisions
+				end
+			end
+			wait() -- Runs every frame
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isNoclip = not isNoclip -- Toggle state
+	
+		if isNoclip then
+			button.Text = "Noclip: ON"
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green when ON
+			noclipLoop()
+		else
+			button.Text = "Noclip: OFF"
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+	
+			-- Restore collision
+			local character = player.Character or player.CharacterAdded:Wait()
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = true -- Enable collisions again
+				end
+			end
+		end
+	end)
+	
+	-- Set default text and color
+	button.Text = "Noclip: OFF"
+	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+	
+end
+coroutine.wrap(DJLC_fake_script)()
+local function DMVIO_fake_script() -- AntiAFK.LocalScript 
+	local script = Instance.new('LocalScript', AntiAFK)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	
+	local isMoving = false -- Toggle state
+	
+	local function moveLoop()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+	
+		if not humanoidRootPart then return end
+	
+		while isMoving do
+			-- Move 2 studs forward (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, -2)
+			camera.CFrame = camera.CFrame * CFrame.new(0, 0, -2)
+			wait(0.00000001)
+	
+			-- Move 2 studs backward (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 0, 2)
+			camera.CFrame = camera.CFrame * CFrame.new(0, 0, 2)
+			wait(0.00000001)
+	
+			-- Move 2 studs left (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(-2, 0, 0)
+			camera.CFrame = camera.CFrame * CFrame.new(-2, 0, 0)
+			wait(0.00000001)
+	
+			-- Move 2 studs right (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(2, 0, 0)
+			camera.CFrame = camera.CFrame * CFrame.new(2, 0, 0)
+			wait(0.00000001)
+	
+			-- Move 2 studs up (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(0, 2, 0)
+			camera.CFrame = camera.CFrame * CFrame.new(0, 2, 0)
+			wait(0.00000001)
+	
+			-- Move 2 studs down (Locally)
+			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.new(0, -2, 0)
+			camera.CFrame = camera.CFrame * CFrame.new(0, -2, 0)
+			wait(0.00000001)
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isMoving = not isMoving -- Toggle movement state
+	
+		if isMoving then
+			button.Text = "Anti-AFK: ON"
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green when ON
+			moveLoop()
+		else
+			button.Text = "Anti-AFK: OFF"
+			button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+		end
+	end)
+	
+	-- Set default text and color
+	button.Text = "Anti-AFK: OFF"
+	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
+	
+end
+coroutine.wrap(DMVIO_fake_script)()
+local function RYFWB_fake_script() -- CloudFrame.Script 
+	local script = Instance.new('Script', CloudFrame)
+
+	local Players = game:GetService("Players")
+	local MarketplaceService = game:GetService("MarketplaceService")
+	
+	local player = Players.LocalPlayer
+	local gui = script.Parent  -- Get the ScreenGui
+	
+	-- Find UI elements
+	local gameNameLabel = gui:FindFirstChild("GameName")
+	local gameIconLabel = gui:FindFirstChild("GameIcon")
+	
+	if gameNameLabel and gameIconLabel then
+		-- Fetch game info
+		local success, gameInfo = pcall(function()
+			return MarketplaceService:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+		end)
+	
+		if success then
+			gameNameLabel.Text = gameInfo.Name  -- Set game name
+	
+			-- Fetch game icon
+			local iconSuccess, icon = pcall(function()
+				return game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).IconImageAssetId
+			end)
+	
+			if iconSuccess then
+				gameIconLabel.Image = "rbxassetid://" .. icon  -- Set game icon
+			end
+		else
+			gameNameLabel.Text = "Unknown Game"
+		end
+	end
+	
+end
+coroutine.wrap(RYFWB_fake_script)()
+local function KKYCQV_fake_script() -- TextBox.TextFixed 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local TextBox = script.Parent
+	
+	-- Set TextBox Properties for Text Wrapping
+	TextBox.TextWrapped = true -- Ensures text wraps inside the box
+	TextBox.TextScaled = false -- Prevents text from resizing automatically
+	
+	-- Limit the max characters to avoid overflow
+	local maxCharacters = 250 -- Adjust this as needed
+	
+	-- Function to prevent overflowing text
+	local function LimitText()
+		if string.len(TextBox.Text) > maxCharacters then
+			TextBox.Text = string.sub(TextBox.Text, 1, maxCharacters)
+		end
+	end
+	
+	-- Connect the function to Text Changed event
+	TextBox:GetPropertyChangedSignal("Text"):Connect(LimitText)
+	
+end
+coroutine.wrap(KKYCQV_fake_script)()
+local function QMMHI_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		while true do
+			local part = Instance.new("Part")
+			part.Size = Vector3.new(1, 1, 1)
+			part.Position = Vector3.new(math.random(-50, 50), 100, math.random(-50, 50))
+			part.Anchored = false
+			part.Parent = workspace
+		end
+	end)
+	
+end
+coroutine.wrap(QMMHI_fake_script)()
+local function SBUMNV_fake_script() -- EditorFrame.Execute 
+	local script = Instance.new('LocalScript', EditorFrame)
+
+	local ExploitAPI = {} -- Replace this with your exploit API functions
+	local ExecuteButton = script.Parent.Execute -- The Execute button
+	local TextBox = script.Parent.TextBox -- The script input box
+	
+	-- Execute script when the button is clicked
+	ExecuteButton.MouseButton1Click:Connect(function()
+		local scriptToExecute = TextBox.Text
+	
+		if scriptToExecute and scriptToExecute ~= "" then
+			
+	
+			-- Try different execution methods based on exploit compatibility
+			local success, err = pcall(function()
+				if ExploitAPI.Execute then
+					ExploitAPI.Execute(scriptToExecute) -- Direct execution
+				else
+					-- If ExploitAPI.Execute isn't found, fallback to loadstring
+					loadstring(scriptToExecute)()
+				end
+			end)
+	
+			-- Check for execution errors
+			if not success then
+				warn("Execution failed: " .. tostring(err))
+			end
+	
+			-- Fetch API Level after execution
+			local level = ExploitAPI.GetLevel and ExploitAPI.GetLevel() or "Unknown"
+			LevelLabel.Text = "API Level: " .. level
+		else
+			print("Error: No script in TextBox!")
+		end
+	end)
+	
+end
+coroutine.wrap(SBUMNV_fake_script)()
+local function FVKO_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	local button = script.Parent -- The GUI button
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local playerGui = player:FindFirstChildOfClass("PlayerGui")
+	
+		if playerGui then
+			local screenGui = playerGui:FindFirstChild("DroomerHub")
+	
+			if screenGui then
+				local frame = screenGui:FindFirstChild("Frame")
+	
+				if frame then
+					frame.Visible = false -- Hides the frame (closes it)
+					print("Frame found and closed!")
+				else
+					print("Frame not found in ScreenGui")
+				end
+			else
+				print("ScreenGui not found in PlayerGui")
+			end
+		else
+			print("PlayerGui not found")
+		end
+	end)
+	
+end
+coroutine.wrap(FVKO_fake_script)()
+local function ULIM_fake_script() -- Mini.Frame 
+	local script = Instance.new('LocalScript', Mini)
+
+	local button = script.Parent -- The GUI button
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local playerGui = player:FindFirstChildOfClass("PlayerGui")
+	
+		if playerGui then
+			local screenGui = playerGui:FindFirstChild("DroomerHub")
+	
+			if screenGui then
+				local frame = screenGui:FindFirstChild("Frame")
+	
+				if frame then
+					frame.Visible = false -- Hides the frame (closes it)
+					print("Frame found and closed!")
+				else
+					print("Frame not found in ScreenGui")
+				end
+			else
+				print("ScreenGui not found in PlayerGui")
+			end
+		else
+			print("PlayerGui not found")
+		end
+	end)
+	
+end
+coroutine.wrap(ULIM_fake_script)()
+local function KGWZPVH_fake_script() -- Mini.Button 
+	local script = Instance.new('LocalScript', Mini)
+
+	local button = script.Parent -- The GUI button
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local playerGui = player:FindFirstChildOfClass("PlayerGui")
+	
+		if playerGui then
+			local screenGui = playerGui:FindFirstChild("DroomerHub")
+	
+			if screenGui then
+				local frame = screenGui:FindFirstChild("Open")
+	
+				if frame then
+					frame.Visible = true -- Hides the frame (closes it)
+					print("Frame found and closed!")
+				else
+					print("Frame not found in ScreenGui")
+				end
+			else
+				print("ScreenGui not found in PlayerGui")
+			end
+		else
+			print("PlayerGui not found")
+		end
+	end)
+	
+end
+coroutine.wrap(KGWZPVH_fake_script)()
+local function AVJTI_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local button = script.Parent -- The GUI button
+	local editorFrame = script.Parent.Parent:FindFirstChild("EditorFrame")
+	local cloudFrame = script.Parent.Parent:FindFirstChild("CloudFrame")
+	local setFrame = script.Parent.Parent:FindFirstChild("SetFrame")
+	
+	if editorFrame and cloudFrame and setFrame then
+		button.MouseButton1Click:Connect(function()
+			editorFrame.Visible = false
+			cloudFrame.Visible = false
+			setFrame.Visible = true
+		end)
+	end
+	
+end
+coroutine.wrap(AVJTI_fake_script)()
+local function EMIS_fake_script() -- Editor.LocalScript 
+	local script = Instance.new('LocalScript', Editor)
+
+	local button = script.Parent -- The GUI button
+	local editorFrame = script.Parent.Parent:FindFirstChild("EditorFrame")
+	local cloudFrame = script.Parent.Parent:FindFirstChild("CloudFrame")
+	local setFrame = script.Parent.Parent:FindFirstChild("SetFrame")
+	
+	if editorFrame and cloudFrame and setFrame then
+		button.MouseButton1Click:Connect(function()
+			editorFrame.Visible = true
+			cloudFrame.Visible = false
+			setFrame.Visible = false
+		end)
+	end
+	
+end
+coroutine.wrap(EMIS_fake_script)()
+local function FLAM_fake_script() -- Cloud.LocalScript 
+	local script = Instance.new('LocalScript', Cloud)
+
+	local button = script.Parent -- The GUI button
+	local editorFrame = script.Parent.Parent:FindFirstChild("EditorFrame")
+	local cloudFrame = script.Parent.Parent:FindFirstChild("CloudFrame")
+	local setFrame = script.Parent.Parent:FindFirstChild("SetFrame")
+	
+	if editorFrame and cloudFrame and setFrame then
+		button.MouseButton1Click:Connect(function()
+			editorFrame.Visible = false
+			cloudFrame.Visible = true
+			setFrame.Visible = false
+		end)
+	end
+	
+end
+coroutine.wrap(FLAM_fake_script)()
+local function PHMYSS_fake_script() -- Open.Frame 
+	local script = Instance.new('LocalScript', Open)
+
+	local button = script.Parent -- The GUI button
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local playerGui = player:FindFirstChildOfClass("PlayerGui")
+	
+		if playerGui then
+			local screenGui = playerGui:FindFirstChild("DroomerHub")
+	
+			if screenGui then
+				local frame = screenGui:FindFirstChild("Frame")
+	
+				if frame then
+					frame.Visible = true -- Hides the frame (closes it)
+					print("Frame found and closed!")
+				else
+					print("Frame not found in ScreenGui")
+				end
+			else
+				print("ScreenGui not found in PlayerGui")
+			end
+		else
+			print("PlayerGui not found")
+		end
+	end)
+	
+end
+coroutine.wrap(PHMYSS_fake_script)()
+local function BXVND_fake_script() -- Open.Button 
+	local script = Instance.new('LocalScript', Open)
+
+	local button = script.Parent -- The GUI button
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local playerGui = player:FindFirstChildOfClass("PlayerGui")
+	
+		if playerGui then
+			local screenGui = playerGui:FindFirstChild("DroomerHub")
+	
+			if screenGui then
+				local frame = screenGui:FindFirstChild("Open")
+	
+				if frame then
+					frame.Visible = false-- Hides the frame (closes it)
+					print("Frame found and closed!")
+				else
+					print("Frame not found in ScreenGui")
+				end
+			else
+				print("ScreenGui not found in PlayerGui")
+			end
+		else
+			print("PlayerGui not found")
+		end
+	end)
+	
+end
+coroutine.wrap(BXVND_fake_script)()
+local function CPPPKAJ_fake_script() -- Open.DraggableGUI 
+	local script = Instance.new('LocalScript', Open)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(CPPPKAJ_fake_script)()
