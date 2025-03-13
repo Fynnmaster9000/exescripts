@@ -36,6 +36,22 @@ local Settings = Instance.new("ImageButton")
 local Editor = Instance.new("ImageButton")
 local Cloud = Instance.new("ImageButton")
 local Open = Instance.new("ImageButton")
+local Load = Instance.new("Frame")
+local Holder = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local Desc = Instance.new("TextLabel")
+local StatusText = Instance.new("TextLabel")
+local ProgressBar = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Creator = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local Version = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local Outlines = Instance.new("ImageLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local UIGradient_5 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -302,9 +318,136 @@ Open.Size = UDim2.new(0, 70, 0, 68)
 Open.Visible = false
 Open.Image = "rbxassetid://107506806042095"
 
+Load.Name = "Load"
+Load.Parent = DroomerHub
+Load.Active = true
+Load.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Load.BorderColor3 = Color3.fromRGB(58, 234, 39)
+Load.BorderSizePixel = 0
+Load.Position = UDim2.new(0.5, -175, 0.5, -100)
+Load.Size = UDim2.new(0, 350, 0, 200)
+Load.Visible = false
+
+Holder.Name = "Holder"
+Holder.Parent = Load
+Holder.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Holder.BorderColor3 = Color3.fromRGB(77, 255, 0)
+Holder.BorderSizePixel = 0
+Holder.ClipsDescendants = true
+Holder.Size = UDim2.new(1, 0, 1, 0)
+
+UIGradient.Rotation = 30
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.60, 0.00), NumberSequenceKeypoint.new(0.61, 1.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient.Parent = Holder
+
+Title.Name = "Title"
+Title.Parent = Holder
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 60, 0, 15)
+Title.Size = UDim2.new(0, 100, 0, 50)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Droomer"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 50.000
+
+Desc.Name = "Desc"
+Desc.Parent = Holder
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.Position = UDim2.new(0, 20, 0, 60)
+Desc.Size = UDim2.new(0, 180, 0, 25)
+Desc.Font = Enum.Font.SourceSans
+Desc.Text = "Ultimate Script"
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextSize = 18.000
+
+StatusText.Name = "StatusText"
+StatusText.Parent = Holder
+StatusText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatusText.BackgroundTransparency = 1.000
+StatusText.Position = UDim2.new(0, 20, 0, 120)
+StatusText.Size = UDim2.new(0, 180, 0, 25)
+StatusText.Font = Enum.Font.SourceSans
+StatusText.Text = "Loading"
+StatusText.TextColor3 = Color3.fromRGB(255, 255, 255)
+StatusText.TextSize = 14.000
+
+ProgressBar.Name = "ProgressBar"
+ProgressBar.Parent = Holder
+ProgressBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ProgressBar.BorderSizePixel = 0
+ProgressBar.Position = UDim2.new(0, 60, 0, 145)
+ProgressBar.Size = UDim2.new(0, 100, 0, 4)
+
+Bar.Name = "Bar"
+Bar.Parent = ProgressBar
+Bar.BackgroundColor3 = Color3.fromRGB(61, 143, 220)
+Bar.BorderSizePixel = 0
+Bar.Size = UDim2.new(0, 0, 1, 0)
+
+ImageLabel.Parent = ProgressBar
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = "rbxassetid://2764171053"
+ImageLabel.ImageColor3 = Color3.fromRGB(45, 45, 45)
+ImageLabel.ScaleType = Enum.ScaleType.Slice
+ImageLabel.SliceCenter = Rect.new(2, 2, 254, 254)
+
+Creator.Name = "Creator"
+Creator.Parent = Load
+Creator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creator.BackgroundTransparency = 1.000
+Creator.Position = UDim2.new(1, -110, 1, -20)
+Creator.Size = UDim2.new(0, 105, 0, 20)
+Creator.Font = Enum.Font.SourceSans
+Creator.Text = "Developed by DroomerTeam"
+Creator.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creator.TextSize = 14.000
+Creator.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_2.Parent = Creator
+
+Version.Name = "Version"
+Version.Parent = Load
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(1, -110, 1, -35)
+Version.Size = UDim2.new(0, 105, 0, 20)
+Version.Font = Enum.Font.SourceSans
+Version.Text = ""
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14.000
+Version.TextXAlignment = Enum.TextXAlignment.Right
+
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_3.Parent = Version
+
+Outlines.Name = "Outlines"
+Outlines.Parent = Load
+Outlines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Outlines.BackgroundTransparency = 1.000
+Outlines.BorderSizePixel = 0
+Outlines.Position = UDim2.new(0, -5, 0, -5)
+Outlines.Size = UDim2.new(1, 10, 1, 10)
+Outlines.Image = "rbxassetid://1427967925"
+Outlines.ScaleType = Enum.ScaleType.Slice
+Outlines.SliceCenter = Rect.new(6, 6, 25, 25)
+Outlines.TileSize = UDim2.new(0, 20, 0, 20)
+
+UIGradient_4.Rotation = -30
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_4.Parent = Outlines
+
+UIGradient_5.Rotation = -30
+UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.62, 0.20), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_5.Parent = Load
+
 -- Scripts:
 
-local function BINUTCV_fake_script() -- Frame.DraggableGUI 
+local function NBMI_fake_script() -- Frame.DraggableGUI 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -342,8 +485,8 @@ local function BINUTCV_fake_script() -- Frame.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(BINUTCV_fake_script)()
-local function ONIZCZR_fake_script() -- Fly.LocalScript 
+coroutine.wrap(NBMI_fake_script)()
+local function QIEUFVK_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	local button = script.Parent
@@ -469,8 +612,8 @@ local function ONIZCZR_fake_script() -- Fly.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(ONIZCZR_fake_script)()
-local function GRRDQ_fake_script() -- MoonWalk.LocalScript 
+coroutine.wrap(QIEUFVK_fake_script)()
+local function OFTOHQY_fake_script() -- MoonWalk.LocalScript 
 	local script = Instance.new('LocalScript', MoonWalk)
 
 	local button = script.Parent
@@ -523,8 +666,8 @@ local function GRRDQ_fake_script() -- MoonWalk.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(GRRDQ_fake_script)()
-local function DJLC_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(OFTOHQY_fake_script)()
+local function KPJI_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local button = script.Parent
@@ -571,8 +714,8 @@ local function DJLC_fake_script() -- Noclip.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(DJLC_fake_script)()
-local function DMVIO_fake_script() -- AntiAFK.LocalScript 
+coroutine.wrap(KPJI_fake_script)()
+local function AMAV_fake_script() -- AntiAFK.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFK)
 
 	local button = script.Parent
@@ -638,8 +781,8 @@ local function DMVIO_fake_script() -- AntiAFK.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(DMVIO_fake_script)()
-local function RYFWB_fake_script() -- CloudFrame.Script 
+coroutine.wrap(AMAV_fake_script)()
+local function GJCM_fake_script() -- CloudFrame.Script 
 	local script = Instance.new('Script', CloudFrame)
 
 	local Players = game:GetService("Players")
@@ -675,8 +818,8 @@ local function RYFWB_fake_script() -- CloudFrame.Script
 	end
 	
 end
-coroutine.wrap(RYFWB_fake_script)()
-local function KKYCQV_fake_script() -- TextBox.TextFixed 
+coroutine.wrap(GJCM_fake_script)()
+local function ZZDTOMT_fake_script() -- TextBox.TextFixed 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local TextBox = script.Parent
@@ -699,8 +842,8 @@ local function KKYCQV_fake_script() -- TextBox.TextFixed
 	TextBox:GetPropertyChangedSignal("Text"):Connect(LimitText)
 	
 end
-coroutine.wrap(KKYCQV_fake_script)()
-local function QMMHI_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZZDTOMT_fake_script)()
+local function EQIQHJD_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local button = script.Parent
@@ -716,47 +859,56 @@ local function QMMHI_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(QMMHI_fake_script)()
-local function SBUMNV_fake_script() -- EditorFrame.Execute 
+coroutine.wrap(EQIQHJD_fake_script)()
+local function FAEZFP_fake_script() -- EditorFrame.Execute 
 	local script = Instance.new('LocalScript', EditorFrame)
 
 	local ExploitAPI = {} -- Replace this with your exploit API functions
 	local ExecuteButton = script.Parent.Execute -- The Execute button
 	local TextBox = script.Parent.TextBox -- The script input box
+	local LevelLabel = script.Parent.LevelLabel -- The label showing API Level
 	
-	-- Execute script when the button is clicked
-	ExecuteButton.MouseButton1Click:Connect(function()
+	-- Function to execute the script
+	local function ExecuteScript()
 		local scriptToExecute = TextBox.Text
 	
 		if scriptToExecute and scriptToExecute ~= "" then
-			
-	
-			-- Try different execution methods based on exploit compatibility
 			local success, err = pcall(function()
+				-- Try using the Exploit API execution function
 				if ExploitAPI.Execute then
-					ExploitAPI.Execute(scriptToExecute) -- Direct execution
+					ExploitAPI.Execute(scriptToExecute) 
+				elseif loadstring then
+					-- Fallback method using loadstring if supported
+					local compiledScript = loadstring(scriptToExecute)
+					if compiledScript then
+						compiledScript()
+					else
+						error("Failed to compile script.")
+					end
 				else
-					-- If ExploitAPI.Execute isn't found, fallback to loadstring
-					loadstring(scriptToExecute)()
+					error("No valid execution method found.")
 				end
 			end)
 	
-			-- Check for execution errors
+			-- Handle execution errors
 			if not success then
 				warn("Execution failed: " .. tostring(err))
 			end
 	
-			-- Fetch API Level after execution
+			-- Update API Level Label
 			local level = ExploitAPI.GetLevel and ExploitAPI.GetLevel() or "Unknown"
 			LevelLabel.Text = "API Level: " .. level
 		else
-			print("Error: No script in TextBox!")
+			warn("No script entered.")
 		end
-	end)
+	end
+	
+	-- Bind function to execute button
+	ExecuteButton.MouseButton1Click:Connect(ExecuteScript)
 	
 end
-coroutine.wrap(SBUMNV_fake_script)()
-local function FVKO_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(FAEZFP_fake_script)()
+local function UMMG_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local button = script.Parent -- The GUI button
@@ -786,8 +938,8 @@ local function FVKO_fake_script() -- Close_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(FVKO_fake_script)()
-local function ULIM_fake_script() -- Mini.Frame 
+coroutine.wrap(UMMG_fake_script)()
+local function OXJRD_fake_script() -- Mini.Frame 
 	local script = Instance.new('LocalScript', Mini)
 
 	local button = script.Parent -- The GUI button
@@ -817,8 +969,8 @@ local function ULIM_fake_script() -- Mini.Frame
 	end)
 	
 end
-coroutine.wrap(ULIM_fake_script)()
-local function KGWZPVH_fake_script() -- Mini.Button 
+coroutine.wrap(OXJRD_fake_script)()
+local function OSZK_fake_script() -- Mini.Button 
 	local script = Instance.new('LocalScript', Mini)
 
 	local button = script.Parent -- The GUI button
@@ -848,8 +1000,8 @@ local function KGWZPVH_fake_script() -- Mini.Button
 	end)
 	
 end
-coroutine.wrap(KGWZPVH_fake_script)()
-local function AVJTI_fake_script() -- Settings.LocalScript 
+coroutine.wrap(OSZK_fake_script)()
+local function TCMT_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent -- The GUI button
@@ -866,8 +1018,8 @@ local function AVJTI_fake_script() -- Settings.LocalScript
 	end
 	
 end
-coroutine.wrap(AVJTI_fake_script)()
-local function EMIS_fake_script() -- Editor.LocalScript 
+coroutine.wrap(TCMT_fake_script)()
+local function VTSL_fake_script() -- Editor.LocalScript 
 	local script = Instance.new('LocalScript', Editor)
 
 	local button = script.Parent -- The GUI button
@@ -884,8 +1036,8 @@ local function EMIS_fake_script() -- Editor.LocalScript
 	end
 	
 end
-coroutine.wrap(EMIS_fake_script)()
-local function FLAM_fake_script() -- Cloud.LocalScript 
+coroutine.wrap(VTSL_fake_script)()
+local function TYQB_fake_script() -- Cloud.LocalScript 
 	local script = Instance.new('LocalScript', Cloud)
 
 	local button = script.Parent -- The GUI button
@@ -902,8 +1054,30 @@ local function FLAM_fake_script() -- Cloud.LocalScript
 	end
 	
 end
-coroutine.wrap(FLAM_fake_script)()
-local function PHMYSS_fake_script() -- Open.Frame 
+coroutine.wrap(TYQB_fake_script)()
+local function LXZFY_fake_script() -- Frame.loadedisable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local loadFrame = script.Parent -- Refers to 'Load' frame
+	
+	loadFrame.Visible = false
+	
+end
+coroutine.wrap(LXZFY_fake_script)()
+local function VJHO_fake_script() -- Frame.loadeenable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local loadFrame = script.Parent -- Refers to 'Load' frame
+	
+	-- Wait 5 seconds
+	wait(10)
+	
+	-- Make it invisible
+	loadFrame.Visible = true
+	
+end
+coroutine.wrap(VJHO_fake_script)()
+local function NROW_fake_script() -- Open.Frame 
 	local script = Instance.new('LocalScript', Open)
 
 	local button = script.Parent -- The GUI button
@@ -933,8 +1107,8 @@ local function PHMYSS_fake_script() -- Open.Frame
 	end)
 	
 end
-coroutine.wrap(PHMYSS_fake_script)()
-local function BXVND_fake_script() -- Open.Button 
+coroutine.wrap(NROW_fake_script)()
+local function CPUNJGG_fake_script() -- Open.Button 
 	local script = Instance.new('LocalScript', Open)
 
 	local button = script.Parent -- The GUI button
@@ -964,8 +1138,8 @@ local function BXVND_fake_script() -- Open.Button
 	end)
 	
 end
-coroutine.wrap(BXVND_fake_script)()
-local function CPPPKAJ_fake_script() -- Open.DraggableGUI 
+coroutine.wrap(CPUNJGG_fake_script)()
+local function ZIMUF_fake_script() -- Open.DraggableGUI 
 	local script = Instance.new('LocalScript', Open)
 
 	local UIS = game:GetService('UserInputService')
@@ -1003,4 +1177,60 @@ local function CPPPKAJ_fake_script() -- Open.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(CPPPKAJ_fake_script)()
+coroutine.wrap(ZIMUF_fake_script)()
+local function PJJRQ_fake_script() -- Bar.LocalScript 
+	local script = Instance.new('LocalScript', Bar)
+
+	local TweenService = game:GetService("TweenService")
+	local parentFrame = script.Parent -- Make sure this script is inside the frame
+	
+	-- Initial properties
+	parentFrame.Size = UDim2.new(0, 0, 1, 0)
+	parentFrame.Position = UDim2.new(0, 0, 0, 0)
+	parentFrame.Visible = true -- Ensure it's visible at the start
+	
+	-- Tween goals
+	local goal = {}
+	goal.Size = UDim2.new(0, 100, 0, 4)
+	goal.Position = UDim2.new(0, 0, 0, 0)
+	
+	-- TweenInfo (Time: 5s, EasingStyle: Linear)
+	local tweenInfo = TweenInfo.new(10, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	
+	-- Create and play tween
+	local tween = TweenService:Create(parentFrame, tweenInfo, goal)
+	tween:Play()
+	
+	-- Hide frame after 5 seconds
+	tween.Completed:Connect(function()
+		game.Players.playergui.Visible = false
+	end)
+	
+end
+coroutine.wrap(PJJRQ_fake_script)()
+local function WGLEX_fake_script() -- Load.loadeenable 
+	local script = Instance.new('LocalScript', Load)
+
+	local loadFrame = script.Parent -- Refers to 'Load' frame
+	
+	-- Wait 5 seconds
+	wait(10)
+	
+	-- Make it invisible
+	loadFrame.Visible = false
+	
+end
+coroutine.wrap(WGLEX_fake_script)()
+local function QYSUZV_fake_script() -- Load.loadedisable 
+	local script = Instance.new('LocalScript', Load)
+
+	local loadFrame = script.Parent -- Refers to 'Load' frame
+	
+	-- Wait 5 seconds
+	wait(0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+	
+	-- Make it invisible
+	loadFrame.Visible = true
+	
+end
+coroutine.wrap(QYSUZV_fake_script)()
