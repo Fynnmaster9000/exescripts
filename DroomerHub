@@ -447,7 +447,7 @@ UIGradient_5.Parent = Load
 
 -- Scripts:
 
-local function NBMI_fake_script() -- Frame.DraggableGUI 
+local function FSBTTQU_fake_script() -- Frame.DraggableGUI 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -485,8 +485,8 @@ local function NBMI_fake_script() -- Frame.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(NBMI_fake_script)()
-local function QIEUFVK_fake_script() -- Fly.LocalScript 
+coroutine.wrap(FSBTTQU_fake_script)()
+local function HBPECBC_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	local button = script.Parent
@@ -612,8 +612,8 @@ local function QIEUFVK_fake_script() -- Fly.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(QIEUFVK_fake_script)()
-local function OFTOHQY_fake_script() -- MoonWalk.LocalScript 
+coroutine.wrap(HBPECBC_fake_script)()
+local function PRKNIO_fake_script() -- MoonWalk.LocalScript 
 	local script = Instance.new('LocalScript', MoonWalk)
 
 	local button = script.Parent
@@ -666,8 +666,8 @@ local function OFTOHQY_fake_script() -- MoonWalk.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(OFTOHQY_fake_script)()
-local function KPJI_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(PRKNIO_fake_script)()
+local function ZGUAWUI_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local button = script.Parent
@@ -714,8 +714,8 @@ local function KPJI_fake_script() -- Noclip.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(KPJI_fake_script)()
-local function AMAV_fake_script() -- AntiAFK.LocalScript 
+coroutine.wrap(ZGUAWUI_fake_script)()
+local function JEITJ_fake_script() -- AntiAFK.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFK)
 
 	local button = script.Parent
@@ -781,8 +781,8 @@ local function AMAV_fake_script() -- AntiAFK.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- White when OFF
 	
 end
-coroutine.wrap(AMAV_fake_script)()
-local function GJCM_fake_script() -- CloudFrame.Script 
+coroutine.wrap(JEITJ_fake_script)()
+local function HRUBTIR_fake_script() -- CloudFrame.Script 
 	local script = Instance.new('Script', CloudFrame)
 
 	local Players = game:GetService("Players")
@@ -818,8 +818,8 @@ local function GJCM_fake_script() -- CloudFrame.Script
 	end
 	
 end
-coroutine.wrap(GJCM_fake_script)()
-local function ZZDTOMT_fake_script() -- TextBox.TextFixed 
+coroutine.wrap(HRUBTIR_fake_script)()
+local function WHSSHI_fake_script() -- TextBox.TextFixed 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local TextBox = script.Parent
@@ -842,8 +842,8 @@ local function ZZDTOMT_fake_script() -- TextBox.TextFixed
 	TextBox:GetPropertyChangedSignal("Text"):Connect(LimitText)
 	
 end
-coroutine.wrap(ZZDTOMT_fake_script)()
-local function EQIQHJD_fake_script() -- Close.LocalScript 
+coroutine.wrap(WHSSHI_fake_script)()
+local function DGTZKP_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	local button = script.Parent
@@ -859,8 +859,8 @@ local function EQIQHJD_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(EQIQHJD_fake_script)()
-local function FAEZFP_fake_script() -- EditorFrame.Execute 
+coroutine.wrap(DGTZKP_fake_script)()
+local function HDOH_fake_script() -- EditorFrame.Execute 
 	local script = Instance.new('LocalScript', EditorFrame)
 
 	local ExploitAPI = {} -- Replace this with your exploit API functions
@@ -907,8 +907,8 @@ local function FAEZFP_fake_script() -- EditorFrame.Execute
 	ExecuteButton.MouseButton1Click:Connect(ExecuteScript)
 	
 end
-coroutine.wrap(FAEZFP_fake_script)()
-local function UMMG_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(HDOH_fake_script)()
+local function QWTWNB_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local button = script.Parent -- The GUI button
@@ -938,8 +938,8 @@ local function UMMG_fake_script() -- Close_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(UMMG_fake_script)()
-local function OXJRD_fake_script() -- Mini.Frame 
+coroutine.wrap(QWTWNB_fake_script)()
+local function HCJEFBY_fake_script() -- Mini.Frame 
 	local script = Instance.new('LocalScript', Mini)
 
 	local button = script.Parent -- The GUI button
@@ -969,8 +969,8 @@ local function OXJRD_fake_script() -- Mini.Frame
 	end)
 	
 end
-coroutine.wrap(OXJRD_fake_script)()
-local function OSZK_fake_script() -- Mini.Button 
+coroutine.wrap(HCJEFBY_fake_script)()
+local function UZPVKTX_fake_script() -- Mini.Button 
 	local script = Instance.new('LocalScript', Mini)
 
 	local button = script.Parent -- The GUI button
@@ -1000,8 +1000,8 @@ local function OSZK_fake_script() -- Mini.Button
 	end)
 	
 end
-coroutine.wrap(OSZK_fake_script)()
-local function TCMT_fake_script() -- Settings.LocalScript 
+coroutine.wrap(UZPVKTX_fake_script)()
+local function FBCAO_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	local button = script.Parent -- The GUI button
@@ -1018,8 +1018,8 @@ local function TCMT_fake_script() -- Settings.LocalScript
 	end
 	
 end
-coroutine.wrap(TCMT_fake_script)()
-local function VTSL_fake_script() -- Editor.LocalScript 
+coroutine.wrap(FBCAO_fake_script)()
+local function RHQNLE_fake_script() -- Editor.LocalScript 
 	local script = Instance.new('LocalScript', Editor)
 
 	local button = script.Parent -- The GUI button
@@ -1036,8 +1036,8 @@ local function VTSL_fake_script() -- Editor.LocalScript
 	end
 	
 end
-coroutine.wrap(VTSL_fake_script)()
-local function TYQB_fake_script() -- Cloud.LocalScript 
+coroutine.wrap(RHQNLE_fake_script)()
+local function WHENRSK_fake_script() -- Cloud.LocalScript 
 	local script = Instance.new('LocalScript', Cloud)
 
 	local button = script.Parent -- The GUI button
@@ -1054,8 +1054,8 @@ local function TYQB_fake_script() -- Cloud.LocalScript
 	end
 	
 end
-coroutine.wrap(TYQB_fake_script)()
-local function LXZFY_fake_script() -- Frame.loadedisable 
+coroutine.wrap(WHENRSK_fake_script)()
+local function VXNSLZK_fake_script() -- Frame.loadedisable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local loadFrame = script.Parent -- Refers to 'Load' frame
@@ -1063,8 +1063,8 @@ local function LXZFY_fake_script() -- Frame.loadedisable
 	loadFrame.Visible = false
 	
 end
-coroutine.wrap(LXZFY_fake_script)()
-local function VJHO_fake_script() -- Frame.loadeenable 
+coroutine.wrap(VXNSLZK_fake_script)()
+local function GLIBTK_fake_script() -- Frame.loadeenable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local loadFrame = script.Parent -- Refers to 'Load' frame
@@ -1076,8 +1076,8 @@ local function VJHO_fake_script() -- Frame.loadeenable
 	loadFrame.Visible = true
 	
 end
-coroutine.wrap(VJHO_fake_script)()
-local function NROW_fake_script() -- Open.Frame 
+coroutine.wrap(GLIBTK_fake_script)()
+local function BSQV_fake_script() -- Open.Frame 
 	local script = Instance.new('LocalScript', Open)
 
 	local button = script.Parent -- The GUI button
@@ -1107,8 +1107,8 @@ local function NROW_fake_script() -- Open.Frame
 	end)
 	
 end
-coroutine.wrap(NROW_fake_script)()
-local function CPUNJGG_fake_script() -- Open.Button 
+coroutine.wrap(BSQV_fake_script)()
+local function USKCL_fake_script() -- Open.Button 
 	local script = Instance.new('LocalScript', Open)
 
 	local button = script.Parent -- The GUI button
@@ -1138,8 +1138,8 @@ local function CPUNJGG_fake_script() -- Open.Button
 	end)
 	
 end
-coroutine.wrap(CPUNJGG_fake_script)()
-local function ZIMUF_fake_script() -- Open.DraggableGUI 
+coroutine.wrap(USKCL_fake_script)()
+local function ZBHL_fake_script() -- Open.DraggableGUI 
 	local script = Instance.new('LocalScript', Open)
 
 	local UIS = game:GetService('UserInputService')
@@ -1177,8 +1177,8 @@ local function ZIMUF_fake_script() -- Open.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(ZIMUF_fake_script)()
-local function PJJRQ_fake_script() -- Bar.LocalScript 
+coroutine.wrap(ZBHL_fake_script)()
+local function AHMHT_fake_script() -- Bar.LocalScript 
 	local script = Instance.new('LocalScript', Bar)
 
 	local TweenService = game:GetService("TweenService")
@@ -1207,8 +1207,8 @@ local function PJJRQ_fake_script() -- Bar.LocalScript
 	end)
 	
 end
-coroutine.wrap(PJJRQ_fake_script)()
-local function WGLEX_fake_script() -- Load.loadeenable 
+coroutine.wrap(AHMHT_fake_script)()
+local function BPCLR_fake_script() -- Load.loadeenable 
 	local script = Instance.new('LocalScript', Load)
 
 	local loadFrame = script.Parent -- Refers to 'Load' frame
@@ -1220,8 +1220,8 @@ local function WGLEX_fake_script() -- Load.loadeenable
 	loadFrame.Visible = false
 	
 end
-coroutine.wrap(WGLEX_fake_script)()
-local function QYSUZV_fake_script() -- Load.loadedisable 
+coroutine.wrap(BPCLR_fake_script)()
+local function XSIHDCE_fake_script() -- Load.loadedisable 
 	local script = Instance.new('LocalScript', Load)
 
 	local loadFrame = script.Parent -- Refers to 'Load' frame
@@ -1233,4 +1233,4 @@ local function QYSUZV_fake_script() -- Load.loadedisable
 	loadFrame.Visible = true
 	
 end
-coroutine.wrap(QYSUZV_fake_script)()
+coroutine.wrap(XSIHDCE_fake_script)()
